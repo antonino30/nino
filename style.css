@@ -29,28 +29,35 @@ body {
   object-fit: contain;
 }
 
+/* PULSANTE INIZIA */
+
 .start-btn {
-    position: absolute;
+  position: absolute;
 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    padding: 12px 35px;
+  padding: 10px 25px;
 
-    font-size: 22px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 
-    border: 3px solid #ffd84d;
-    border-radius: 15px;
+  border: 2px solid #d9bd70;
+  border-radius: 12px;
 
-    background: rgba(255,255,255,0.9);
-    color: #8a6a35;
+  background: rgba(255,255,255,0.9);
+  color: #8a6a35;
 
-    cursor: pointer;
+  cursor: pointer;
 
-    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+
+  z-index: 100;
 }
+
+/* MENU */
+
 .menu-screen {
   flex-direction: column;
   justify-content: flex-start;
@@ -76,14 +83,22 @@ body {
 .grid-buttons button {
   width: 150px;
   height: 115px;
+
   border: 3px solid #d9bd70;
   border-radius: 22px;
+
   background: rgba(255, 255, 255, 0.75);
+
   font-size: 55px;
+
   cursor: pointer;
+
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.16);
+
   transition: transform 0.15s, background 0.15s;
 }
+
+/* EFFETTI HOVER */
 
 .grid-buttons button:hover,
 .arrow:hover,
@@ -96,18 +111,27 @@ body {
   background: #fff7b8;
 }
 
+/* FRECCE */
+
 .arrow,
 .back {
   position: absolute;
+
   width: 70px;
   height: 70px;
+
   border-radius: 50%;
   border: 3px solid #d9bd70;
+
   background: rgba(255, 255, 255, 0.88);
+
   color: #8a6a35;
+
   font-size: 58px;
   line-height: 58px;
+
   cursor: pointer;
+
   box-shadow: 0 7px 15px rgba(0, 0, 0, 0.18);
 }
 
@@ -127,7 +151,10 @@ body {
   z-index: 10;
 }
 
+/* VERSIONE MOBILE */
+
 @media (max-width: 700px) {
+
   .grid-buttons {
     grid-template-columns: repeat(3, 95px);
     grid-template-rows: repeat(3, 85px);
@@ -146,18 +173,9 @@ body {
     height: 55px;
     font-size: 45px;
   }
-}
-.start-btn{
-    position:absolute;
-    bottom:40px;
-    left:50%;
-    transform:translateX(-50%);
-    padding:15px 40px;
-    font-size:28px;
-    font-weight:bold;
-    border:none;
-    border-radius:15px;
-    cursor:pointer;
-    background:#c62828;
-    color:white;
+
+  .start-btn {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
 }
