@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schindler's List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app">
+    <section id="home" class="screen active">
+      <img src="assets/start.png" alt="Schindler's List - slide iniziale" class="full-slide" />
+      <button class="start-btn" onclick="showScreen('menu')">INIZIA</button>
+    </section>
+
+    <section id="menu" class="screen menu-screen">
+      <h1>SCHINDLER'S LIST</h1>
+      <div class="grid-buttons">
+        <button title="Brano al piano" onclick="showScreen('music')">🎼</button>
+        <button title="Libro di Schindler's List" onclick="showScreen('book')">📖</button>
+        <button title="Nazismo" onclick="showScreen('nazism')">🚆</button>
+        <button title="Razzismo" onclick="showScreen('racism')">🏛️</button>
+        <button title="Poesia" onclick="showScreen('poem')">👠</button>
+        <button title="Talmud" onclick="showScreen('talmud')">✡️</button>
+        <button title="Lise Meitner" onclick="showScreen('lise')">👩‍🔬</button>
+        <button title="Fissione nucleare" onclick="showScreen('fission')">⚛️</button>
+        <button title="Guernica" onclick="showScreen('guernica')">🎨</button>
+      </div>
+      <button class="arrow left" onclick="showScreen('home')">‹</button>
+      <button class="arrow right" onclick="showScreen('final')">›</button>
+    </section>
+
+    <section id="music" class="screen content-screen"><img src="assets/music.png" class="full-slide" alt="Brano al piano" /><button class="back" onclick="showScreen('menu')">‹</button></section>
+    <section id="book" class="screen content-screen"><img src="assets/book.png" class="full-slide" alt="Libro Schindler's List" /><button class="back" onclick="showScreen('menu')">‹</button></section>
+    <section id="nazism" class="screen content-screen"><img src="assets/nazism.png" class="full-slide" alt="Nazismo" /><button class="back" onclick="showScreen('menu')">‹</button></section>
+    <section id="racism" class="screen content-screen"><img src="assets/racism.png" class="full-slide" alt="Razzismo in francese" /><button class="back" onclick="showScreen('menu')">‹</button></section>
+    <section id="poem" class="screen content-screen"><img src="assets/poem.png" class="full-slide" alt="Poesia" /><button class="back" onclick="showScreen('menu')">‹</button></section>
+    <section id="talmud" class="screen content-screen"><img src="assets/talmud.png" class="full-slide" alt="Talmud" /><button class="back" onclick="showScreen('menu')">‹</button></section>
+    <section id="lise" class="screen content-screen"><img src="assets/lise.png" class="full-slide" alt="Lise Meitner" /><button class="back" onclick="showScreen('menu')">‹</button></section>
+    <section id="fission" class="screen content-screen"><img src="assets/fission.png" class="full-slide" alt="Fissione nucleare" /><button class="back" onclick="showScreen('menu')">‹</button></section>
+    <section id="guernica" class="screen content-screen"><img src="assets/guernica.png" class="full-slide" alt="Guernica" /><button class="back" onclick="showScreen('menu')">‹</button></section>
+
+    <section id="final" class="screen content-screen">
+      <img src="assets/final.png" class="full-slide" alt="Slide finale" />
+      <button class="back" onclick="showScreen('menu')">‹</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
