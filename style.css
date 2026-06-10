@@ -88,10 +88,13 @@ body {
 }
 
 .grid-buttons button:hover,
-.start-btn:hover,
 .arrow:hover,
 .back:hover {
   transform: scale(1.06);
+  background: #fff7b8;
+}
+
+.start-btn:hover {
   background: #fff7b8;
 }
 
