@@ -6,15 +6,18 @@
   <title>Schindler's List</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <main id="app">
+
     <section id="home" class="screen active">
-      <img src="assets/start.png" alt="Schindler's List - slide iniziale" class="full-slide" />
+      <img src="start.png" alt="Schindler's List - pagina iniziale" class="full-slide" />
       <button class="start-btn" onclick="showScreen('menu')">INIZIA</button>
     </section>
 
     <section id="menu" class="screen menu-screen">
       <h1>SCHINDLER'S LIST</h1>
+
       <div class="grid-buttons">
         <button title="Brano al piano" onclick="showScreen('music')">🎼</button>
         <button title="Libro di Schindler's List" onclick="showScreen('book')">📖</button>
@@ -26,68 +29,62 @@
         <button title="Fissione nucleare" onclick="showScreen('fission')">⚛️</button>
         <button title="Guernica" onclick="showScreen('guernica')">🎨</button>
       </div>
+
       <button class="arrow left" onclick="showScreen('home')">‹</button>
       <button class="arrow right" onclick="showScreen('final')">›</button>
     </section>
-<section id="start" class="screen active">
 
-    <img src="start.png" class="full-slide" alt="Schindler's List" />
+    <section id="music" class="screen content-screen">
+      <img src="music.png" class="full-slide" alt="Brano al piano" />
+      <button class="back" onclick="showScreen('menu')">‹</button>
+    </section>
 
-    <button class="start-btn"
-            onclick="showScreen('menu')">
-        INIZIA
-    </button>
+    <section id="book" class="screen content-screen">
+      <img src="book.png" class="full-slide" alt="Libro Schindler's List" />
+      <button class="back" onclick="showScreen('menu')">‹</button>
+    </section>
 
-</section>
-   <section id="music" class="screen content-screen">
-    <img src="music.png" class="full-slide" alt="Brano al piano" />
-    <button class="back" onclick="showScreen('menu')">‹</button>
-</section>
+    <section id="nazism" class="screen content-screen">
+      <img src="nazism.png" class="full-slide" alt="Nazismo" />
+      <button class="back" onclick="showScreen('menu')">‹</button>
+    </section>
 
-<section id="book" class="screen content-screen">
-    <img src="book.png" class="full-slide" alt="Libro Schindler's List" />
-    <button class="back" onclick="showScreen('menu')">‹</button>
-</section>
+    <section id="racism" class="screen content-screen">
+      <img src="racism.png" class="full-slide" alt="Razzismo" />
+      <button class="back" onclick="showScreen('menu')">‹</button>
+    </section>
 
-<section id="nazism" class="screen content-screen">
-    <img src="nazism.png" class="full-slide" alt="Nazismo" />
-    <button class="back" onclick="showScreen('menu')">‹</button>
-</section>
+    <section id="poem" class="screen content-screen">
+      <img src="poem.png" class="full-slide" alt="Poesia" />
+      <button class="back" onclick="showScreen('menu')">‹</button>
+    </section>
 
-<section id="racism" class="screen content-screen">
-    <img src="racism.png" class="full-slide" alt="Razzismo" />
-    <button class="back" onclick="showScreen('menu')">‹</button>
-</section>
+    <section id="talmud" class="screen content-screen">
+      <img src="talmud.png" class="full-slide" alt="Talmud" />
+      <button class="back" onclick="showScreen('menu')">‹</button>
+    </section>
 
-<section id="poem" class="screen content-screen">
-    <img src="poem.png" class="full-slide" alt="Poesia" />
-    <button class="back" onclick="showScreen('menu')">‹</button>
-</section>
+    <section id="lise" class="screen content-screen">
+      <img src="lise.png" class="full-slide" alt="Lise Meitner" />
+      <button class="back" onclick="showScreen('menu')">‹</button>
+    </section>
 
-<section id="talmud" class="screen content-screen">
-    <img src="talmud.png" class="full-slide" alt="Talmud" />
-    <button class="back" onclick="showScreen('menu')">‹</button>
-</section>
+    <section id="fission" class="screen content-screen">
+      <img src="fission.png" class="full-slide" alt="Fissione nucleare" />
+      <button class="back" onclick="showScreen('menu')">‹</button>
+    </section>
 
-<section id="lise" class="screen content-screen">
-    <img src="lise.png" class="full-slide" alt="Lise Meitner" />
-    <button class="back" onclick="showScreen('menu')">‹</button>
-</section>
+    <section id="guernica" class="screen content-screen">
+      <img src="guernica.png" class="full-slide" alt="Guernica" />
+      <button class="back" onclick="showScreen('menu')">‹</button>
+    </section>
 
-<section id="fission" class="screen content-screen">
-    <img src="fission.png" class="full-slide" alt="Fissione nucleare" />
-    <button class="back" onclick="showScreen('menu')">‹</button>
-</section>
+    <section id="final" class="screen content-screen">
+      <img src="final.png" class="full-slide" alt="Slide finale" />
+      <button class="back" onclick="showScreen('menu')">‹</button>
+    </section>
 
-<section id="guernica" class="screen content-screen">
-    <img src="guernica.png" class="full-slide" alt="Guernica" />
-    <button class="back" onclick="showScreen('menu')">‹</button>
-</section>
-
-<section id="final" class="screen content-screen">
-    <img src="final.png" class="full-slide" alt="Slide finale" />
-    <button class="back" onclick="showScreen('menu')">‹</button>
-</section>
+  </main>
 
   <script src="script.js"></script>
 </body>
