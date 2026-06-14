@@ -191,3 +191,31 @@ body {
     margin: auto;
     pointer-events: none;
 }
+.next-slide {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 70px;
+  height: 70px;
+
+  border-radius: 50%;
+  border: 3px solid #d9bd70;
+
+  background: rgba(255, 255, 255, 0.88);
+  color: #8a6a35;
+
+  font-size: 58px;
+  line-height: 58px;
+
+  cursor: pointer;
+
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.18);
+
+  z-index: 10;
+}
+
+.next-slide:hover {
+  background: #fff7b8;
+}
